@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   price = 200;
+  bbb = 10;
+
+  add100() {
+    let number = 10;
+    number += 100;
+    this.price = number;
+  }
 }
 
 /*
