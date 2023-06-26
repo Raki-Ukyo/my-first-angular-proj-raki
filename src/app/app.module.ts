@@ -13,19 +13,13 @@ import { ProductListComponent } from './product-list/product-list.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
-    ])
+      { path: 'topbar', component: TopBarComponent },
+    ]),
   ],
-  declarations: [
-    AppComponent,
-    TopBarComponent,
-    ProductListComponent
-  ],
-  bootstrap: [
-    AppComponent
-  ]
+  declarations: [AppComponent, TopBarComponent, ProductListComponent],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
-
+export class AppModule {}
 
 /*
 Copyright Google LLC. All Rights Reserved.
