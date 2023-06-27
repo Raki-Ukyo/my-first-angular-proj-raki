@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { products } from '../products';
+import { Product } from '../shared/product.model';
 
 @Component({
   selector: 'app-product-list',
@@ -8,7 +9,11 @@ import { products } from '../products';
   styleUrls: ['./product-list.component.css'],
 })
 export class ProductListComponent {
-  products = [...products];
+  products: Product = {
+    name: '名前',
+    price: 1533102,
+    description: '説明文～～～',
+  };
 
   students = [
     { name: '太郎', gender: '男', age: '50' },
