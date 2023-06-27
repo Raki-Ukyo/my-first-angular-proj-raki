@@ -11,10 +11,7 @@ import { ProductListComponent } from './product-list/product-list.component';
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
-      { path: 'topbar', component: TopBarComponent },
-    ]),
+    RouterModule.forRoot([{ path: '', component: ProductListComponent }]),
   ],
   declarations: [AppComponent, TopBarComponent, ProductListComponent],
   bootstrap: [AppComponent],
