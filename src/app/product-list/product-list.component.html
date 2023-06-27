@@ -1,7 +1,10 @@
+<h2>商品一覧</h2>
 <div *ngFor="let product of products">
-  <h2>{{ product.name }}</h2>
-  <h2>{{ product.price }}</h2>
-  <h2>{{ product.description }}</h2>
+  <a [title]="product.name + 'の詳細はこちら'">
+    <h3>{{ product.name }}</h3>
+  </a>
+  <h3>{{ product.price }}</h3>
+  <h3>{{ product.description }}</h3>
 </div>
 <!-- <h2>{{ student.name }}</h2>
   <h2>{{ student.age }}</h2>
