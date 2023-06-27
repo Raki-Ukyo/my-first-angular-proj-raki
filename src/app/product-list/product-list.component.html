@@ -4,7 +4,10 @@
     <h3>{{ product.name }}</h3>
   </a>
   <h3>{{ product.price }}</h3>
-  <h3>{{ product.description }}</h3>
+
+  <p *ngIf="product.description">
+    {{ product.description }}
+  </p>
 </div>
 <!-- <h2>{{ student.name }}</h2>
   <h2>{{ student.age }}</h2>
